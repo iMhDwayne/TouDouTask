@@ -1,0 +1,232 @@
+* {
+    margin: 0;
+    padding: 0;
+    color: white;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+body {
+    background-color: #333;
+
+}
+
+.flex {
+    display: flex;
+}
+
+
+
+
+/*          INDEX          */
+
+
+
+
+
+
+
+div#to-do {
+    background-color: #ff444466;
+    height: 350px;
+    text-align: center;
+    border-radius: 10px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 5000;
+    width: 100%;
+    max-width: 95%;
+
+    h1 {
+        margin: 2em;
+    }
+
+    a {}
+
+    a img {
+        border-radius: 25%;
+        margin: 0 50px;
+        padding: 020px;
+        transition: all .5s ease;
+        perspective: 1000px;
+    }
+
+    a:hover img {
+        background-color: #ff444466;
+        transform: rotateY(10deg);
+    }
+}
+
+
+
+
+
+/*          SIGN-IN         */
+
+
+
+div#headtop {
+
+    margin: 20px auto;
+    background-color: #ff444466;
+    height: 125px;
+    text-align: center;
+    border-radius: 10px;
+    width: 100%;
+    max-width: 95%;
+    justify-content: center;
+    align-items: center;
+
+    h1 {
+        font-size: 70px;
+    }
+
+    button {
+        
+        background-color: transparent;
+    outline: none;
+    transition: all .3s;
+    border: none;
+    display: block;
+    position: absolute;
+    right: 150px;
+    }
+    
+    button:hover {
+        background-color: transparent;
+    
+        transform: translateY(-5px);
+        box-shadow: transparent 0 0 10px;
+    }
+}
+
+div#reg-form {
+
+    background-color: #ff444466;
+    height: 100%;
+    max-height: 50%;
+    text-align: center;
+    border-radius: 10px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 5000;
+    width: 100%;
+    max-width: 60%;
+    align-items: center;
+    justify-content: space-evenly;
+
+    form.form {
+        flex-direction: column;
+        align-items: flex-end;
+        justify-content: center;
+        width: 100%;
+        max-width: 50%;
+    }
+
+    form.form input {
+        width: 100%;
+    }
+
+
+    form.form input:hover {
+        border-bottom: 2px solid #333;
+        color: #333;
+    }
+
+    form.form input,
+    form.form input::placeholder {
+        color: rgb(255, 255, 255, .7);
+
+        background-color: transparent;
+        margin-bottom: 40px;
+        box-sizing: border-box;
+        border: none;
+        outline: none;
+        border-bottom: solid 2px white;
+        transition: all .5s;
+        padding: 10px 0;
+        cursor: auto;
+    }
+
+    button {
+        background-color: transparent;
+        outline: none;
+        transition: all .3s;
+        border: none;
+    }
+
+    button:hover {
+        background-color: transparent;
+
+        transform: translateY(-5px);
+        box-shadow: transparent 0 0 10px;
+    }
+
+}
+
+
+
+/*          TouDouTask          */
+
+
+
+div#toudou {
+
+    margin: 90px auto;
+    background-color: #ff444466;
+    height: 500px;
+    max-height: 100%;
+    text-align: center;
+    border-radius: 10px;
+
+    width: 100%;
+    max-width: 60%;
+    align-items: center;
+    justify-content: space-evenly;
+
+}
+
+div#list-buttons {
+    margin: 0 auto;
+    width: 95%;
+    max-width: 100%;
+button {
+    border: none;
+    border-radius: 10px;
+    background-color: #ff444466;
+    width: 50%;
+    height: 50px;
+ 
+    
+}
+button#create{margin-right: 10px;}
+button#delete-all{margin-left: 10px;}
+}
+
+#toudou .checktask {
+    display: block;
+}
+
+
+
+/*          TASK            */
+
+
+.task {
+    justify-content: center;
+    display: flex; 
+    align-items: center; 
+    margin-bottom: 10px;
+  }
+
+  .task input[type="checkbox"] {
+    margin-right: 10px;
+
+  }
+
+  img {
+    cursor: pointer;
+  }
